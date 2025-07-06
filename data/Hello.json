@@ -1,0 +1,59 @@
+[
+	{
+		"inputs": [],
+		"name": "paprika_guessed_38d52e0f",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "paprika_guessed_3e4c38a9",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "arg0",
+				"type": "address"
+			}
+		],
+		"name": "paprika_guessed_70a08231",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "paprika_guessed_76809ce3",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]

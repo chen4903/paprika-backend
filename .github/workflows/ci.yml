@@ -1,0 +1,22 @@
+---
+name: Rust
+on:
+  # push:
+  #   branches:
+  #     - main
+  pull_request_target:
+    branches:
+      - main
+
+env:
+  CARGO_TERM_COLOR: always
+jobs:
+  build:
+    runs-on: [self-hosted, integration-xl]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Format check
+        run: cargo fmt -- --check

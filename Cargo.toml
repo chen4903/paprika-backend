@@ -1,0 +1,58 @@
+[package]
+name = "paprika"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ctor = "0.1"
+reqwest = { version = "0.11", features = ["json"] }
+lazy_static = "1.4.0"
+structopt = "0.3"
+actix-web = "4.0"
+dssim = "3.3.4"
+heimdall-cfg = { git = "https://github.com/Jon-Becker/heimdall-rs.git", branch = "main" }
+ethabi = { git = "https://github.com/rust-ethereum/ethabi.git", tag = "v18.0.0" }
+heimdall-disassembler = { git = "https://github.com/Jon-Becker/heimdall-rs.git", branch = "main" }
+hex = "0.4.3"
+image = "0.25.5"
+image-compare = "0.4.1"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+tracing = "0.1.41"
+regex = "1.11.1"
+rand = "0.9.0"
+chrono = "0.4.39"
+evmole = "0.7.1"
+serde_json = "1.0.139"
+dotenv = "0.15"
+rusqlite = { version = "0.34.0", features = ["bundled"] }
+alloy = { git = "https://github.com/chen4903/alloy.git", branch = "abi-guess-wrapper", features = [
+    "eips",
+    "full",
+    "hyper",
+    "json-rpc",
+    "node-bindings",
+    "rpc-client",
+    "rpc-types-debug",
+    "rpc-types-trace",
+    "signer-aws",
+    "signer-gcp",
+    "signer-keystore",
+    "signer-ledger",
+    "signer-mnemonic",
+    "signer-trezor",
+    "signer-yubihsm",
+] }
+eyre = "0.6.12"
+alloy-rpc-types-eth = { git = "https://github.com/chen4903/alloy.git", branch = "abi-guess-wrapper" }
+alloy-network = { git = "https://github.com/chen4903/alloy.git", branch = "abi-guess-wrapper" }
+alloy-provider = { git = "https://github.com/chen4903/alloy.git", branch = "abi-guess-wrapper" }
+alloy-rpc-client = { git = "https://github.com/chen4903/alloy.git", branch = "abi-guess-wrapper" }
+
+[patch.crates-io]
+alloy-core = { git = "https://github.com/chen4903/core.git", branch = "abi-guess-wrapper" }
+alloy-dyn-abi = { git = "https://github.com/chen4903/core.git", branch = "abi-guess-wrapper" }
+alloy-json-abi = { git = "https://github.com/chen4903/core.git", branch = "abi-guess-wrapper" }
+alloy-primitives = { git = "https://github.com/chen4903/core.git", branch = "abi-guess-wrapper" }
+alloy-sol-types = { git = "https://github.com/chen4903/core.git", branch = "abi-guess-wrapper" }
