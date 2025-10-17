@@ -38,3 +38,7 @@ See more details in `paper/*`
 
 4. You can make calls through the examples in `example/api.md`.
 
+## Support
+We are listed in [Giveth](https://giveth.io/project/paprika?apcid=0068ef085cbb8443e47c5800)!
+<img width="1332" height="623" alt="image" src="https://github.com/user-attachments/assets/41e2caec-7c03-492d-b295-a0cb1d0f1364" />
+
